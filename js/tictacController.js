@@ -3,11 +3,17 @@ angular
     .controller('TictacController', TictacController);
 
 
-    TictacController.$inject = ['$firebaseObject'];
+    //TictacController.$inject = ['$firebaseObject'];
 
 
-    function TictacController($firebaseObject){
+    function TictacController(){
         var self = this;
-        
+        var counter = 1;
+        self.changeColor = changeColor;
+
+        function changeColor(){
+          counter ++;
+          console.log(counter);
+        }
 
     }
