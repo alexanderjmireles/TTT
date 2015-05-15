@@ -1,5 +1,22 @@
-.boxes {
+body {
+  width: 310px;
+
+  margin-left: 500px;
+  background-image: url ("images/oceanblue.gif");
+  background-color: white;
+
+
+  }
+
+	.boxes {
   height: 100px;
   width: 100px;
   border: 1px solid black;
+  float: left;
+  /*background-image: url ("../images/cat4.jpg");
+*/
+}
+	*.red {
+	background-color: red;
+	background-image: url ("../images/cat4.jpg");
 }
