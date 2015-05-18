@@ -37,7 +37,6 @@ angular
        function clickYou($index){
            if (self.board.boxes[$index].p1owns != "") {
                alert("seat's taken")
-               
             }
 
             else {
@@ -58,7 +57,7 @@ angular
                    self.board.$save(); 
                    self.playerX = true ; 
 
-                   function 
+                   
                } 
             }
        }
