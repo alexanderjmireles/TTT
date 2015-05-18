@@ -20,3 +20,7 @@ body {
 	background-color: red;
 	background-image: url ("../images/cat4.jpg");
 }
+
+*.blue {
+	background-color: blue;
+}
