@@ -3,7 +3,7 @@ body {
 
   margin-left: 500px;
   background-image: url ("images/oceanblue.gif");
-  background-color: white;
+  background-color: aqua;
 
 
   }
@@ -23,4 +23,7 @@ body {
 
 *.blue {
 	background-color: blue;
+}
+P {
+	text-align: center;
 }

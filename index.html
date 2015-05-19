@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="tictacApp">
    <head>
+   <p>TIC TAC TOE</p>
        <meta charset="utf-8">
        <title>Tic Tac Toe</title>
        <link rel="stylesheet" href="css/normalize.css">
@@ -13,14 +14,15 @@
    </head>
    <body ng-controller="TictacController as tictacCtrl">
        <div class="clearfix">
-           <div class="boxes" ng-class="{red: box.p1owns == 'X', blue: box.p1owns == 'O' }" ng-click="tictacCtrl.clickYou($index)" ng-repeat="box in tictacCtrl.board.boxes track by $index">
-                   
-           </div>        
+           <div class="boxes" ng-class="{red: box.p1owns == 'X', blue: box.p1owns == 'O' }" ng-click="tictacCtrl.clickYou($index)" ng-repeat="box in tictacCtrl.board.boxes track by $index" ng-click="tictacCtrl.reset()">
+            </div>  
+            <img src="http://cdn.makeagif.com/media/5-18-2015/PTDQiK.gif" alt="The Hampsterdance Song"></a><div style="font-size:11px;"></div>     
        </div>
-       <div>
            <button>
                RESET
            </button>
+           <button>Player one</button>
+           <button>Player two</button>
        </div>
    </body>
 </html>

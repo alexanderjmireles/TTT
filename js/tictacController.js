@@ -36,7 +36,7 @@ angular
 
        function clickYou($index){
            if (self.board.boxes[$index].p1owns != "") {
-               alert("seat's taken")
+               alert("No Double Dipping")
             }
 
             else {
@@ -57,7 +57,19 @@ angular
                    self.board.$save(); 
                    self.playerX = true ; 
 
-                   
+
+
+
+                   function firebaseBoard() {
+           
+           var ref = new Firebase('https://ttt3.firebaseio.com/board');
+           var fbBoard = $firebaseArray(ref);
+           return fbBoard;
+       }
+
+                
+
+
                } 
             }
        }

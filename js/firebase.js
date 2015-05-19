@@ -1,4 +1,4 @@
-/*! @license Firebase v2.2.3
+ /*! @license Firebase v2.2.3
     License: https://www.firebase.com/terms/terms-of-service.html */
 var CLOSURE_NO_DEPS = true;
 var COMPILED = false;
@@ -12911,7 +12911,7 @@ Firebase.prototype.authWithOAuthRedirect = function(provider, onErr, opt_options
 };
 Firebase.prototype.authWithOAuthToken = function(provider, params, onComplete, opt_options) {
   fb.util.validation.validateArgCount("Firebase.authWithOAuthToken", 3, 4, arguments.length);
-  fb.core.util.validation.validateString("Firebase.authWithOAuthToken", 1, provider, false);
+  fb.core.util.validation.validateString("Firebase.authWithOAuthToken", 1, provib der, false);
   fb.util.validation.validateCallback("Firebase.authWithOAuthToken", 3, onComplete, false);
   fb.core.util.validation.validateObject("Firebase.authWithOAuthToken", 4, opt_options, true);
   if (goog.isString(params)) {
